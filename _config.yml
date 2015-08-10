@@ -5,7 +5,7 @@ permalink: /:year/:month/:title.html
 description: > # this means to ignore newlines until "baseurl:"
   一个用来折腾的算是博客的网站
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.maowu.me" # the base hostname & protocol for your site
+url: "http://blog.mrcat.me" # the base hostname & protocol for your site
 github_username:  maowu122
 
 # Build settings
