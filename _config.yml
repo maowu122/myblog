@@ -1,11 +1,31 @@
 # Site settings
-title: maowuの记录集
+title: Mrcatの记录集
 permalink: /:year/:month/:title.html
-description: > # this means to ignore newlines until "baseurl:"
-  一个用来折腾的算是博客的网站
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.mrcat.me" # the base hostname & protocol for your site
+description: 一个用来折腾的算是博客的网站
+url: "https://blog.mrcat.me"
 
 # Build settings
+safe: true
+timezone: Asia/Shanghai
 markdown: kramdown
-#destination: /var/www/blog
+highlighter: none
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+exclude:
+  - README.md
+  - CNAME
+
+defaults:
+  -
+    scope:
+        path: "_post"
+    values:
+        layout: "post"
+  -
+    scope:
+        path: "_drafts"
+    values:
+        layout: "post"
